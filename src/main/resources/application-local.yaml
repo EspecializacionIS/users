@@ -1,0 +1,13 @@
+aws:
+  region: us-east-1
+  cognito:
+    userPoolId: us-east-1_e84S2d51H
+    clientId: 3oac53d99a3bcjv8ovfmkgr3ge
+  auth:
+    mode: static
+  accessKeyId: AKIAW6NHC6DW7Y4FOPFI
+  secretAccessKey: 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
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration

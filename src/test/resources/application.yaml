@@ -1,0 +1,12 @@
+aws:
+  region: us-east-1
+  auth:
+    mode: default   # <- usa DefaultCredentialsProvider, no necesita keys
+  cognito:
+    userPoolId: dummy-pool
+    clientId: dummy-client
+
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
