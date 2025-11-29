@@ -26,7 +26,7 @@ public class CognitoConfig {
     private String secretAccessKey;
 
     @Value("${aws.sessionToken:}")
-    private String sessionToken; // opcional (solo si tus credenciales son temporales)
+    private String sessionToken;
 
     @Bean
     public CognitoIdentityProviderClient cognitoClient() {
