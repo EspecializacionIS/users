@@ -5,9 +5,7 @@ import jakarta.validation.constraints.NotEmpty;
 import java.util.List;
 import lombok.Data;
 
-/**
- * Represents a request to add a user to one or more groups.
- */
+
 @Data
 public class AddToGroupRequest {
 
