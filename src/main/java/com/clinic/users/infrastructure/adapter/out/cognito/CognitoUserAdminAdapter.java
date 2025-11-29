@@ -172,7 +172,7 @@ public class CognitoUserAdminAdapter implements CognitoGateway {
             return client.adminListGroupsForUser(req)
                     .groups()
                     .stream()
-                    .map(GroupType::groupName) // doctor, nurse, etc
+                    .map(GroupType::groupName)
                     .toList();
 
         } catch (CognitoIdentityProviderException e) {
@@ -215,9 +215,6 @@ public class CognitoUserAdminAdapter implements CognitoGateway {
     }
 
 
-
-
-
     private List<String> loadGroups(String username) {
         var req = AdminListGroupsForUserRequest.builder()
                 .userPoolId(userPoolId)
@@ -227,7 +224,7 @@ public class CognitoUserAdminAdapter implements CognitoGateway {
         return client.adminListGroupsForUser(req)
                 .groups()
                 .stream()
-                .map(GroupType::groupName)   // "doctor", "nurse", etc.
+                .map(GroupType::groupName) 
                 .toList();
     }
 
