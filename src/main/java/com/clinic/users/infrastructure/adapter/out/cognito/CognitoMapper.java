@@ -39,7 +39,6 @@ public class CognitoMapper {
     }
 
 
-
     public User from(AdminGetUserResponse resp, List<String> groups) {
         return User.builder()
                 .username(resp.username())
@@ -50,7 +49,6 @@ public class CognitoMapper {
                 .build();
     }
 
-    // Opcional: versiones antiguas delegan a las nuevas con lista vacía
     public User from(UserType userType) {
         return from(userType, Collections.emptyList());
     }
