@@ -12,7 +12,7 @@
 	<artifactId>users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>users</name>
-	<description>Pets clinic users management</description>
+	<description>Clinic users management</description>
 	<url/>
 	<licenses>
 		<license/>
