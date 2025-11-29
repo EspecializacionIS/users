@@ -43,10 +43,10 @@ class UserAdminServiceTest {
         Map<String, String> attrs = new HashMap<>();
         attrs.put("custom_document", "1234567890");
         attrs.put("email", "user@test.com");
-        attrs.put("phone_number", "1234567890"); // ✅ válido: 10 dígitos
+        attrs.put("phone_number", "1234567890");
         attrs.put("address", "Calle 123");
-        attrs.put("birthdate", "01/01/1990");    // ✅ fecha válida
-        attrs.put("raw_password", "Passw0rd!");  // ✅ cumple la policy
+        attrs.put("birthdate", "01/01/1990");   
+        attrs.put("raw_password", "Passw0rd!");
 
         return User.builder()
                 .username("user123")
@@ -84,7 +84,7 @@ class UserAdminServiceTest {
     @Test
     void shouldFailWhenUsernameIsInvalid() {
         User invalidUser = User.builder()
-                .username("user con espacios!") // inválido
+                .username("user con espacios!")
                 .enabled(true)
                 .attributes(buildValidAttributes())
                 .build();
