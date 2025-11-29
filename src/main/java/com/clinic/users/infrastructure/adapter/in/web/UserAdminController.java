@@ -148,7 +148,7 @@ public class UserAdminController {
                 .username(u.getUsername())
                 .enabled(u.getEnabled())
                 .attributes(attrs)
-                .groups(u.getGroups())   // 👈 asegurarte de incluir esto
+                .groups(u.getGroups())
                 .build();
     }
 
